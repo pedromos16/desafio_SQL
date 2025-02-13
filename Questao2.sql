@@ -19,6 +19,7 @@ INSERT INTO Tarefas (Id, ProjetoId, Titulo, Descricao, Status)
 VALUES (3, 2, 'Escolha das regioes atendidas', NULL, 'Nao iniciado');
 
 
+
 INSERT INTO Usuarios (Id, Nome, Email, Telefone, Cargo) 
 VALUES (1, 'Pedro', 'kathlyn9847@uorak.com', '(83) 3038-5432', 'Desenvolvedor');
 
@@ -35,6 +36,7 @@ INSERT INTO Usuarios (Id, Nome, Email, Telefone, Cargo)
 VALUES (5, 'Carlos', 'kathlyn9847@uorak.com', '(83) 3038-5432', 'Analista Financeiro');
 
 
+
 INSERT INTO Equipes (Id, ProjetoId, Nome, Setor, Responsavel, Descricao) 
 VALUES (1, 2, 'Azul', 'Desenvolvimento', 'Marcelo', 'Equipe de desenvolvimento de software');
 
@@ -43,6 +45,7 @@ VALUES (2, 3, 'Verde', 'Recursos Humanos', 'Bruna', 'Atracao de talentos e gesta
 
 INSERT INTO Equipes (Id, ProjetoId, Nome, Setor, Responsavel, Descricao) 
 VALUES (3, 1, 'Laranja', 'Financeiro', 'Carlos', 'Gestao finaceira da empresa');
+
 
 
 INSERT INTO Usuarios_Equipes (IdUsuario, IdEquipe, DataEntrada, Funcao, Ativo) 
