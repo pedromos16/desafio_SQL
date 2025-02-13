@@ -10,14 +10,14 @@ um valor NULL.
 
 ![alt text](image-1.png)
 
-RIGHT JOIN => O oposto do LEFT JOIN. Somente os registros correspodentes de uma tabela A a uma tabela B e todos os registros da tabela 
-B, caso a tabela B esteja a direita. Seguindo com mais um exemplo, todas as Tarefas seriam exibidas e seus Projetos relacionados, mas 
-nesse caso especifico onde as Tarefas dependem dos Projetos, não haveria campos com NULL como no LEFT JOIN. Seria uma exibição 
+RIGHT JOIN => O oposto do LEFT JOIN. Somente os registros correspondentes de uma tabela A a uma tabela B e todos os registros da tabela 
+B, caso a tabela B esteja à direita. Seguindo com mais um exemplo, todas as Tarefas seriam exibidas e seus Projetos relacionados, mas 
+nesse caso específico onde as Tarefas dependem dos Projetos, não haveria campos com NULL como no LEFT JOIN. Seria uma exibição 
 semelhante ao INNER JOIN.
 
 ![alt text](image-2.png)
 
-OUTER JOIN => Nas minhas pesquisas achei como FULL OUTER JOIN. Exibiria todos os registros tanto de uma tabela A quanto uma tabela B.
+OUTER JOIN => Nas minhas pesquisas achei como FULL OUTER JOIN. Exibiria todos os registros tanto de uma tabela A quanto de uma tabela B.
 Com o último exemplo, exibiria todos os Projetos e todas as Tarefas, sendo que os Projetos que não tem Tarefas seriam exibidos 
 acompanhados de um NULL. Nesse caso, semelhante a exibição do LEFT JOIN.
 
