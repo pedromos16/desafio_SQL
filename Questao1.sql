@@ -3,15 +3,15 @@ CREATE TABLE Projetos(
 	Nome VARCHAR (100) NOT NULL,
 	Descricao VARCHAR(500),
 	DataInicio DATE NOT NULL,
-	DataFim DATE
+	DataFim DATE NOT NULL
 );
 
-CREATE TABLE Tarfeas(
+CREATE TABLE Tarefas(
 	Id INT PRIMARY KEY,
 	ProjetoId INT NOT NULL, 
 	Titulo VARCHAR(50) NOT NULL,
 	Descricao VARCHAR(500),
-	Status VARCHAR(15) NOT NULL CHECK (Status in ('Nao iniciado', 'Em anadamento', 'Finalizado')),
+	Status VARCHAR(15) NOT NULL CHECK (Status in ('Nao iniciado', 'Em andamento', 'Concluido')),
 	FOREIGN KEY (ProjetoId) REFERENCES Projetos(id)
 );
 
