@@ -2,7 +2,7 @@ CREATE TABLE Projetos(
 	Id INT PRIMARY KEY,
 	Nome VARCHAR (100) NOT NULL,
 	Descricao VARCHAR(500),
-	DataInicio TIMESTAMP NOT NULL,
+	DataInicio DATE NOT NULL,
 	DataFim DATE
 );
 
