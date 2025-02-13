@@ -35,14 +35,14 @@ INSERT INTO Usuarios (Id, Nome, Email, Telefone, Cargo)
 VALUES (5, 'Carlos', 'kathlyn9847@uorak.com', '(83) 3038-5432', 'Analista Financeiro');
 
 
-INSERT INTO Equipes (Id, Nome, Setor, Responsavel, Descricao) 
-VALUES (1, 'Azul', 'Desenvolvimento', 'Marcelo', 'Equipe de desenvolvimento de software');
+INSERT INTO Equipes (Id, ProjetoId, Nome, Setor, Responsavel, Descricao) 
+VALUES (1, 2, 'Azul', 'Desenvolvimento', 'Marcelo', 'Equipe de desenvolvimento de software');
 
-INSERT INTO Equipes (Id, Nome, Setor, Responsavel, Descricao) 
-VALUES (2, 'Verde', 'Recursos Humanos', 'Bruna', 'Atracao de talentos e gestao interna');
+INSERT INTO Equipes (Id, ProjetoId, Nome, Setor, Responsavel, Descricao) 
+VALUES (2, 3, 'Verde', 'Recursos Humanos', 'Bruna', 'Atracao de talentos e gestao interna');
 
-INSERT INTO Equipes (Id, Nome, Setor, Responsavel, Descricao) 
-VALUES (3, 'Laranja', 'Financeiro', 'Carlos', 'Gestao finaceira da empresa');
+INSERT INTO Equipes (Id, ProjetoId, Nome, Setor, Responsavel, Descricao) 
+VALUES (3, 1, 'Laranja', 'Financeiro', 'Carlos', 'Gestao finaceira da empresa');
 
 
 INSERT INTO Usuarios_Equipes (IdUsuario, IdEquipe, DataEntrada, Funcao, Ativo) 

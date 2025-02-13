@@ -25,10 +25,12 @@ CREATE TABLE Usuarios (
 
 CREATE TABLE Equipes (
 	Id INT PRIMARY KEY,
+	ProjetoId INT NOT NULL,
 	Nome VARCHAR (50) NOT NULL,
 	Setor VARCHAR(30) NOT NULL,
 	Responsavel VARCHAR(50) NOT NULL,
-	Descricao VARCHAR(500)
+	Descricao VARCHAR(500),
+	FOREIGN KEY (ProjetoId) REFERENCES Projetos(id)
 );
 
 CREATE TABLE Usuarios_Equipes(
