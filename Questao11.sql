@@ -1,14 +1,10 @@
-CREATE PROCEDURE sp_inserir_tarefa AS BEGIN
-	SELECT 4 AS Id,
-	1 AS ProjetoId, 
-	'Conversar com especialistas2' As Titulo, 
-	'Entrar com contato com especialitas2' As Descricaco, 
-	'Em andamento' As Status;
-END;
+CREATE PROCEDURE sp_adicionar_tarefa
+(@Id AS INT, @ProjetoId AS INT , @Titulo AS VARCHAR (100), @Descricao AS VARCHAR(500), @Status AS VARCHAR(15))
+AS
+	if exists (SELECT Id FROM Projetos WHERE Id = @ProjetoId)
+		BEGIN
+			INSERT INTO Tarefas (Id, ProjetoId, Titulo, Descricao, Status ) 
+			VALUES (@Id, @ProjetoId, @Titulo, @Descricao, @Status);
+		END
 
-EXEC sp_inserir_tarefa
-
-IF EXISTS (SELECT Id FROM Projetos WHERE Id = 1)
-	BEGIN
-		INSERT INTO Tarefas (Id, ProjetoId, Titulo, Descricao, Status) EXECUTE sp_inserir_tarefa
-	END
+EXEC sp_adicionar_tarefa 4, 3, 'Conversar com especialistas', 'Entrar com contato com especialitas', 'Em andamento';
