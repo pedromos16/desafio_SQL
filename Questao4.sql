@@ -1,0 +1,1 @@
+SELECT Id, Titulo, Descricao, Status FROM Tarefas WHERE Status != 'Concluido'
